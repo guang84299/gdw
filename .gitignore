@@ -1,3 +1,6 @@
-frameworks/
+frameworks/cocos2d-html5/
+frameworks/cocos2d-x/
+frameworks/runtime-src/
+simulator/
 res/
 .idea/

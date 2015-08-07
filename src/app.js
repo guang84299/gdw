@@ -13,7 +13,7 @@ var HelloWorldLayer = cc.Layer.extend({
         var size = cc.winSize;
 
         // add a "close" icon to exit the progress. it's an autorelease object
-        var closeItem = new cc.MenuItemImage(
+     /*   var closeItem = new cc.MenuItemImage(
             res.CloseNormal_png,
             res.CloseSelected_png,
             function () {
@@ -51,6 +51,7 @@ var HelloWorldLayer = cc.Layer.extend({
             rotation: 180
         });
         this.addChild(this.sprite, 0);
+        this.sprite.drawDebug();
 
         this.sprite.runAction(
             cc.sequence(
@@ -64,6 +65,12 @@ var HelloWorldLayer = cc.Layer.extend({
                 cc.tintTo(2.5,255,125,0)
             )
         );
+
+*/
+
+        GText.test(this);
+
+        cc.log(_T("ÖÐ¹ú"));
         return true;
     }
 });
@@ -73,6 +80,7 @@ var HelloWorldScene = cc.Scene.extend({
         this._super();
         var layer = new HelloWorldLayer();
         this.addChild(layer);
+        layer.drawDebug();
     }
 });
 
